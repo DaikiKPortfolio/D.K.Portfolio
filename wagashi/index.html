@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ja" class="hmb_btn_on">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./Hina_Mincho/HinaMincho-Regular.ttf">
+    <link rel="stylesheet" href="indexCSS.css">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <title>北関堂</title>
+</head>
+
+<body>
+    <div class="wrap_hiddon">
+        <div id="page_top" class="topBtn_off">
+            <a href="#top"></a>
+        </div>
+
+        <div class="hamburgerMenu">
+            <!-- <input type="checkbox" id="hamb_btn-check" onclick="hamb_btn_on();"> -->
+            <input type="checkbox" id="hamb_btn-check">
+            <label for="hamb_btn-check" class="hamb_btn">
+                <span></span>
+            </label>
+            <header id="header">
+                <div class="arrowHidden" id="arrowSW">
+                    <div class="arrow">
+                        <div class="arrowHead"></div>
+                    </div>
+                </div>
+                <nav>
+                    <h1>北<span>関</span>堂</h1>
+                    <ul class="header_1_menu">
+                        <li>
+                            <a href="javascript:hmbMenuClick_top();" name="top" onclick="hamb_btn_off();">
+                                <p>TOP</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:hmbMenuClick_se2();" name="se2" onclick="hamb_btn_off();">
+                                <p>TOPICS</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:hmbMenuClick_se3();" name="se3" onclick="hamb_btn_off();">
+                                <p>北関堂について</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:hmbMenuClick_se5();" name="se5" onclick="hamb_btn_off();">
+                                <p>店舗アクセス</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="product.html" onclick="hamb_btn_off();">
+                                <p>商品紹介</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="jobInformation.html" onclick="hamb_btn_off();">
+                                <p>採用情報</p>
+                            </a>
+                        </li>
+                        <li class="hmb_swOn">
+                            <a href="#top" onclick="hamb_btn_off();">
+                                <p>公式Twitter</p>
+                                <img src="./img/2021 Twitter logo - blue.png">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <main>
+            <section class="se1_mainVisual blr_set" id="se1">
+                <div class="text_1">
+                    <p>大切なひとときに</p>
+                    <p>季節に合わせた和菓子を</p>
+                </div>
+            </section>
+
+            <section class="se2_topics" id="se2">
+                <h2 class="blr_set">TOPICS</h2>
+                <div class="text_1 blr_set">
+                    <p><span>2022.11.07</span><span>期間限定　丸ごと栗どら焼き販売</span></p>
+                    <p><span>2022.12.14</span><span>大九藤井店にて出張販売</span></p>
+                </div>
+                <div class="text_2">
+                    <a href="#top"><span>→</span>more</a>
+                </div>
+            </section>
+
+            <section class="se3_overview" id="se3">
+                <h2 class="title">北関堂について</h2>
+                <div class="content_1">
+                    <ul>
+                        <li>
+                            <p>
+                                <span>平成9年創業</span>の<span>当店</span>では<span>四季折々</span>の<span>和菓子</span>を<span>ご用意</span>しております。
+                            </p>
+                            <p>
+                                <span>「<span>今度</span>の<span>集まり</span>では<span>何を用意</span>したら…。」</span>
+                                <span>「<span>季節</span>の<span>雰囲気</span>に合わせた<span>和菓子</span>がほしい」</span>
+                            </p>
+                            <p>
+                                <span>これまで培ってきた<span>ノウハウ</span>で、全ての<span>お客様</span>に<span>ご満足</span>いただける<span>お品</span>を<span>ご提供</span>致します。</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p><img src="./img/about.png" alt="和菓子"></p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="se4_subVisual" id="se4">
+                <div class="content_1-spring">
+                    <p class="imgBox_1 blr_set2">
+                        <img src="./img/season1-pc.png" alt="">
+                        <img src="./img/season1-sp.png" alt="">
+                    </p>
+                    <div class="text_1">
+                        <p class="img_1">
+                            <img src="./img/title1.png" alt="">
+                        </p>
+                        <div>
+                            <p>桃の節句や端午の節句</p>
+                            <p>新生活のお祝いに</p>
+                        </div>
+                    </div>
+                    <p class="imgBox_2 blr_set2">
+                        <img src="./img/item1-2.png" alt="">
+                        <img src="./img/item1-1.png" alt="">
+                    </p>
+                </div>
+
+                <div class="content_1-summer">
+                    <p class="imgBox_1 blr_set2">
+                        <img src="./img/season2-pc.png" alt="">
+                        <img src="./img/season2-sp.png" alt="">
+                    </p>
+                    <div class="text_1">
+                        <p class="img_1">
+                            <img src="./img/title2.png" alt="">
+                        </p>
+                        <div>
+                            <p>お中元に</p>
+                            <p>涼をよぶ夏のギフト</p>
+                        </div>
+                    </div>
+                    <p class="imgBox_2 blr_set2">
+                        <img src="./img/item2-1.png" alt="">
+                        <img src="./img/item2-2.png" alt="">
+                    </p>
+                </div>
+
+                <div class="content_1-autumn">
+                    <p class="imgBox_1 blr_set2">
+                        <img src="./img/season3-pc.png" alt="">
+                        <img src="./img/season3-sp.png" alt="">
+                    </p>
+                    <div class="text_1">
+                        <p class="img_1">
+                            <img src="./img/title3.png" alt="">
+                        </p>
+                        <div>
+                            <p>栗どら焼きに芋ようかん</p>
+                            <p>秋は和菓子がおいしい季節</p>
+                        </div>
+                    </div>
+                    <p class="imgBox_2 blr_set2">
+                        <img src="./img/item3-2.png" alt="">
+                        <img src="./img/item3-1.png" alt="">
+                    </p>
+                </div>
+
+                <div class="content_1-winter">
+                    <p class="imgBox_1 blr_set2">
+                        <img src="./img/season4-pc.png" alt="">
+                        <img src="./img/season4-sp.png" alt="">
+                    </p>
+                    <div class="text_1">
+                        <p class="img_1">
+                            <img src="./img/title4.png" alt="">
+                        </p>
+                        <div>
+                            <p>一年の感謝の贈り物に</p>
+                            <p>お年始回りのお土産に</p>
+                        </div>
+                    </div>
+                    <p class="imgBox_2 blr_set2">
+                        <img src="./img/item4-1.png" alt="">
+                        <img src="./img/item4-2.png" alt="">
+                    </p>
+                </div>
+            </section>
+
+            <section class="se5_access" id="se5">
+                <h2 class="title">店舗アクセス</h2>
+                <div class="content_1">
+                    <ul>
+                        <li>
+                            <div>
+                                <p>営業時間</p>
+                                <p>10:00 ~ 18:00</p>
+                            </div>
+                            <div>
+                                <p>　定休日</p>
+                                <p>木曜日</p>
+                            </div>
+                            <div>
+                                <p>　　住所</p>
+                                <p>
+                                    <span>札幌市中央区</span><span>南9条西3丁目2-10</span><span>札幌KSビル 6F</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p>電話番号</p>
+                                <p>011-232-5508</p>
+                            </div>
+                            <div>
+                                <p>アクセス</p>
+                                <p>
+                                    <span>地下鉄南北線</span>
+                                    <span>中島公園より</span>
+                                    <span>徒歩3分</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d364.45498347524125!2d141.35511500234136!3d43.049010746128324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a27ee23ea55%3A0xdedc877edeaf642!2z5YyX6Zai5p2x5a2m6Zmi!5e0!3m2!1sja!2sjp!4v1670447338951!5m2!1sja!2sjp"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>公式Twitter</p>
+            <a href="#top" onclick="hamb_btn_off();">
+                <p>新着情報はこちら</p>
+            </a>
+            <div class="img_1">
+                <img src="./img/2021 Twitter logo - white.png">
+            </div>
+            <small>©2022 kitakando All Rights Reserved</small>
+        </footer>
+
+        <!-- <<< sectionIdJump >>> -->
+        <script>
+            function hmbMenuClick_top() {
+                window.scrollTo(0, 0);
+                console.log("topScroll");
+            }
+            function hmbMenuClick_se2() {
+                let sCtop = document.getElementById("se2").getBoundingClientRect().top;
+                let windowSize = window.innerWidth;
+                let newY = window.scrollY + sCtop;
+                let headerHeight = document.getElementById('header').clientHeight;
+                newY = newY - headerHeight;
+                window.scrollTo(0, newY);
+                console.log("se2Scroll");
+            }
+            function hmbMenuClick_se3() {
+                let sCtop = document.getElementById("se3").getBoundingClientRect().top;
+                let windowSize = window.innerWidth;
+                let newY = window.scrollY + sCtop;
+                let headerHeight = document.getElementById('header').clientHeight;
+                newY = newY - headerHeight;
+                window.scrollTo(0, newY);
+                console.log("se3Scroll");
+            }
+            function hmbMenuClick_se5() {
+                let sCtop = document.getElementById("se5").getBoundingClientRect().top;
+                let windowSize = window.innerWidth;
+                let newY = window.scrollY + sCtop;
+                let headerHeight = document.getElementById('header').clientHeight;
+                newY = newY - headerHeight;
+                window.scrollTo(0, newY);
+                console.log("se5Scroll");
+            }
+        </script>
+
+        <!-- <script>
+            const hmb_check = document.getElementById("hamb_btn-check");
+            const hmb_html = document.querySelector(".hmb_btn_on");
+            const returnTop = document.querySelector('#page_top');
+            let STORAGE_KEY = "scrollY";
+            let stockNumber = 0;
+            let scrolTop = 0;
+
+            function hamb_btn_on() {
+                let scrolTop = pageYOffset;
+                if (hmb_check.checked == true) {
+                    stockNumber = scrolTop;
+                    $(hmb_html).css({ "position": "fixed" });
+                    $(hmb_html).css({ "overflow": "hidden" });
+                } else if (hmb_check.checked == false) {
+                    $(hmb_html).css({ "position": "static" });
+                    $(hmb_html).css({ "overflow": "visible" });
+                    window.scrollBy(0, stockNumber);
+                } else {
+                    $(hmb_html).css({ "position": "static" });
+                    $(hmb_html).css({ "overflow": "visible" });
+                    window.scrollBy(0, stockNumber);
+                }
+            }
+
+            function hamb_btn_off() {
+                // let getId = target.id;
+                // console.log(href);
+                let a = document.querySelector('[name=""]');
+                console.log(a);
+                hmb_check.checked = false;
+                $(hmb_html).css({ "position": "static" });
+                $(hmb_html).css({ "overflow": "visible" });
+                switch (a) {
+                    case "#se3":
+                        console.log(getId.href);
+                    case "#se4":
+                        console.log(getId.href);
+                    default:
+                        console.log("なし");
+                }
+            } -->
+
+            window.addEventListener('scroll', () => {
+                var pageYOffset = window.pageYOffset;
+                if (pageYOffset >= 500) {
+                    returnTop.classList.remove('topBtn_off');
+                    returnTop.classList.add('topBtn_on');
+                } else {
+                    returnTop.classList.remove('topBtn_on');
+                    returnTop.classList.add('topBtn_off');
+                }
+            });
+
+            window.onload = function () {
+                var ua = navigator.userAgent;
+                var sampleElement = document.getElementById('arrowSW');
+                if (ua.indexOf('iPhone') > 0) {
+                } else if (ua.indexOf('iPad') > 0) {
+                } else if (ua.indexOf('Android') > 0) {
+                } else {
+                    sampleElement.classList.remove('arrowHidden');
+                }
+            }
+        </script>
+
+        <!-- <<< sectionSlideIn >>> -->
+        <script>
+            window.onload = function () {
+                $(document).ready(function () {
+                    ScrollReveal().reveal('#se1', {
+                        origin: 'bottom',
+                        delay: 0,
+                        duration: 600,
+                        reset: false,
+                        afterReveal: function (el) {
+                            el.classList.add('blr_reset');
+                        }
+                    });
+                });
+                ScrollReveal().reveal('#se1 .text_1', {
+                    delay: 700,
+                    duration: 2300,
+                    opacity: 0,
+                    origin: 'right',
+                    distance: '200px',
+                    reset: false
+                });
+                $(document).ready(function () {
+                    ScrollReveal().reveal('#se2 h2, #se2 .text_1', {
+                        delay: 0,
+                        duration: 400,
+                        opacity: 0,
+                        origin: 'bottom',
+                        distance: '700px',
+                        reset: false,
+                        afterReveal: function (el) {
+                            el.classList.add('blr_reset');
+                        }
+                    });
+                });
+                ScrollReveal().reveal('#se2 .text_2', {
+                    delay: 700,
+                    duration: 1800,
+                    opacity: 0,
+                    origin: 'left',
+                    distance: '2600px',
+                    reset: false
+                });
+                ScrollReveal().reveal('#se3 .content_1 ul li, #se5 .content_1 ul li', {
+                    delay: 300,
+                    duration: 1000,
+                    opacity: 0,
+                    origin: 'bottom',
+                    distance: '150px',
+                    reset: false,
+                });
+                $(document).ready(function () {
+                    ScrollReveal().reveal('#se4 .imgBox_1', {
+                        delay: 0,
+                        duration: 1500,
+                        opacity: 0,
+                        origin: 'bottom',
+                        reset: false,
+                        afterReveal: function (el) {
+                            el.classList.add('blr_reset');
+                        }
+                    });
+                    ScrollReveal().reveal('#se4 .text_1', {
+                        delay: 500,
+                        duration: 2000,
+                        opacity: 0,
+                        origin: 'bottom',
+                        reset: false,
+                        afterReveal: function (el) {
+                            el.classList.add('blr_reset');
+                        }
+                    });
+                    ScrollReveal().reveal('#se4 .imgBox_2', {
+                        delay: 500,
+                        duration: 1400,
+                        opacity: 0,
+                        origin: 'bottom',
+                        distance: '100px',
+                        reset: false,
+                        afterReveal: function (el) {
+                            el.classList.add('blr_reset');
+                        }
+                    });
+                });
+            }
+        </script>
+    </div>
+</body>
+
+</html>

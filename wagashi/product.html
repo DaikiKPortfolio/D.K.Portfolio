@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja" class="hmb_btn_on">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="./Hina_Mincho/HinaMincho-Regular.ttf">
+    <link rel="stylesheet" href="productionCSS.css">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <title>北関堂 - 商品紹介</title>
+</head>
+
+<body>
+    <div class="wrap_hiddon">
+        <div id="page_top" class="topBtn_off">
+            <a href="#top"></a>
+        </div>
+
+        <div class="hamburgerMenu">
+            <input type="checkbox" id="hamb_btn-check" onclick="hamb_btn_on();">
+            <label for="hamb_btn-check" class="hamb_btn">
+                <span></span>
+            </label>
+            <header>
+                <div class="arrowHidden" id="arrowSW">
+                    <div class="arrow">
+                        <div class="arrowHead"></div>
+                    </div>
+                </div>
+                <nav>
+                    <h1>北<span>関</span>堂</h1>
+                    <ul class="header_1_menu">
+                        <li>
+                            <a href="index.html#top" onclick="hamb_btn_off();">
+                                <p>TOP</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#se2" onclick="hamb_btn_off();">
+                                <p>TOPICS</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#se3" onclick="hamb_btn_off();">
+                                <p>北関堂について</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#se5" onclick="hamb_btn_off();">
+                                <p>店舗アクセス</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="jobInformation.html" onclick="hamb_btn_off();">
+                                <p>採用情報</p>
+                            </a>
+                        </li>
+                        <li class="hmb_swOn">
+                            <a href="index.html#top" onclick="hamb_btn_off();">
+                                <p>公式Twitter</p>
+                                <img src="./img/2021 Twitter logo - blue.png">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <main>
+            <section class="se1_mainVisual" id="se1">
+                <div class="text_1">
+                    <h1>商品紹介</h1>
+                </div>
+            </section>
+
+            <div class="line"></div>
+
+            <section class="se2_productIntroduction" id="se2">
+                <div class="breadcrumbBox">
+                    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a itemprop="item" href="index.html">
+                                <span itemprop="name">TOP</span>
+                            </a>
+                            <meta itemprop="position" content="1" />
+                        </li>
+
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <span itemprop="name">商品紹介</span>
+                            <meta itemprop="position" content="2" />
+                        </li>
+                    </ol>
+                </div>
+                <div class="content_1">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>さくら餅　¥390</dt>
+                                <div class="table">
+                                    <dd>
+                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                    </dd>
+                                    <dd>
+                                        <img src="./img/about.png" alt="">
+                                    </dd>
+                                </div>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>かしわ餅　¥410</dt>
+                                <div class="table">
+                                    <dd>
+                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                    </dd>
+                                    <dd>
+                                        <img src="./img/about.png" alt="">
+                                    </dd>
+                                </div>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>よもぎ餅　¥350</dt>
+                                <div class="table">
+                                    <dd>
+                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                    </dd>
+                                    <dd>
+                                        <img src="./img/about.png" alt="">
+                                    </dd>
+                                </div>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="line"></div>
+        </main>
+
+        <footer>
+            <p>公式Twitter</p>
+            <a href="#top" onclick="hamb_btn_off();">
+                <p>新着情報はこちら</p>
+            </a>
+            <div class="img_1">
+                <img src="./img/2021 Twitter logo - white.png">
+            </div>
+            <small>©2022 kitakando All Rights Reserved</small>
+        </footer>
+
+        <script>
+            const hmb_check = document.getElementById("hamb_btn-check");
+            const hmb_html = document.querySelector(".hmb_btn_on");
+            const returnTop = document.querySelector('#page_top');
+            var STORAGE_KEY = "scrollY";
+            var stockNumber = 0;
+            var scrolTop = 0;
+
+            function hamb_btn_on() {
+                var scrolTop = pageYOffset;
+                if (hmb_check.checked == true) {
+                    stockNumber = scrolTop;
+                    $(hmb_html).css({ "position": "fixed" });
+                    $(hmb_html).css({ "overflow": "hidden" });
+                } else if (hmb_check.checked == false) {
+                    $(hmb_html).css({ "position": "static" });
+                    $(hmb_html).css({ "overflow": "visible" });
+                    window.scrollBy(0, stockNumber);
+                } else {
+                    $(hmb_html).css({ "position": "static" });
+                    $(hmb_html).css({ "overflow": "visible" });
+                    window.scrollBy(0, stockNumber);
+                }
+            }
+
+            function hamb_btn_off() {
+                hmb_check.checked = false;
+                $(hmb_html).css({ "position": "static" });
+                $(hmb_html).css({ "overflow": "visible" });
+            }
+
+            window.addEventListener('scroll', () => {
+                var pageYOffset = window.pageYOffset;
+                if (pageYOffset >= 500) {
+                    returnTop.classList.remove('topBtn_off');
+                    returnTop.classList.add('topBtn_on');
+                } else {
+                    returnTop.classList.remove('topBtn_on');
+                    returnTop.classList.add('topBtn_off');
+                }
+            });
+
+            window.onload = function () {
+                var ua = navigator.userAgent;
+                var sampleElement = document.getElementById('arrowSW');
+                if (ua.indexOf('iPhone') > 0) {
+                } else if (ua.indexOf('iPad') > 0) {
+                } else if (ua.indexOf('Android') > 0) {
+                } else {
+                    sampleElement.classList.remove('arrowHidden');
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
