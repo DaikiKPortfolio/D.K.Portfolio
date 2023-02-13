@@ -157,13 +157,15 @@ header h1 span {
 }
 
 .header_1_menu li:hover p {
+	top: -2px;
+	left: -2px;
 	color: red;
 	font-weight: bold;
 }
 
 .header_1_menu li:hover p::before,
 #se2 .text_2 a:hover:before {
-	top: 3px;
+	top: 5px;
 	left: 3px;
 	font-weight: bold;
 }
@@ -185,16 +187,14 @@ header h1 span {
 }
 
 .header_1_menu li:nth-of-type(5) p::before {
-	content: '商品紹介';
-}
-
-.header_1_menu li:nth-of-type(6) p::before {
 	content: '採用情報';
 }
 
 .header_1_menu p {
 	position: relative;
-	transition: all .5s;
+	top: 0;
+	left: 0;
+	transition: all .2s;
 	display: inline-block;
 	font-size: clamp(16px, 1.563vw, 32px);
 	color: rgb(84, 35, 35);
@@ -385,11 +385,8 @@ footer small {
 		top: 0;
 		right: 0;
 		display: flex;
-		width: 20vw;
-		height: 20vw;
-		max-width: 60px;
-		max-height: 7vh;
-		min-height: 60px;
+		width: min(20vw, 50px);
+		height: clamp(50px, 20vw, 7vh);
 		justify-content: center;
 		align-items: center;
 		z-index: 10001;
@@ -433,7 +430,7 @@ footer small {
 	}
 
 	header {
-		min-height: 60px;
+		height: clamp(50px, 20vw, 7vh);
 		display: block;
 		background-color: rgba(255, 255, 255, 0.7);
 		transition: all 0.3s;
@@ -442,6 +439,7 @@ footer small {
 
 	header nav {
 		height: 100%;
+		padding-left: 5vw;
 	}
 
 	header nav .hmb_swOn {
@@ -606,5 +604,4 @@ footer small {
 	#se2 .table dd:last-child img {
 		object-position: center;
 	}
-
 }
