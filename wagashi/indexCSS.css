@@ -592,7 +592,7 @@ footer small {
 
 .blr_set {
 	filter: blur(10px);
-	transition: all 1s ease;
+	transition: all .5s ease;
 }
 
 .blr_set2 {
@@ -695,7 +695,6 @@ footer small {
 		height: clamp(50px, 20vw, 7vh);
 		display: block;
 		background-color: rgba(255, 255, 255, 0.7);
-		object-fit: cover;
 		transition: all 0.3s;
 		border-bottom: 1px solid rgb(84, 35, 35);
 	}
@@ -988,7 +987,7 @@ footer small {
 	.se5_access {
 		max-width: 500px;
 		margin: 0 auto;
-		padding-top: 120px;
+		/* padding-top: 120px; */
 	}
 
 	#se5 .content_1 {
