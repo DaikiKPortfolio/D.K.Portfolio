@@ -102,10 +102,7 @@ header {
 	position: fixed;
 	z-index: 10000;
 	width: 100%;
-	height: 20vw;
-	max-height: 7vh;
-	min-height: 80px;
-	padding: 0 max(38.4px, 5vw);
+	height: max(12vh, 50px);
 	background-color: #EBE3D8;
 	display: flex;
 	justify-content: center;
@@ -119,7 +116,7 @@ header nav {
 }
 
 header h1 {
-	width: 20%;
+	width: 15%;
 	text-align: center;
 }
 
@@ -133,7 +130,7 @@ header h1 span {
 }
 
 .header_1_menu {
-	width: 80%;
+	width: 85%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -144,11 +141,65 @@ header h1 span {
 	text-align: center;
 }
 
+.header_1_menu li:nth-of-type(3),
+.header_1_menu li:nth-of-type(4) {
+	padding: 0 5px;
+}
+
+.header_1_menu li p::before {
+	top: 0;
+	left: 0;
+	display: inline;
+	position: absolute;
+	z-index: -1;
+	color: rgba(128, 128, 128, 0.4);
+	transition: all .5s;
+}
+
+.header_1_menu li:hover p {
+	top: -2px;
+	left: -2px;
+	color: red;
+	font-weight: bold;
+}
+
+.header_1_menu li:hover p::before,
+#se2 .text_2 a:hover:before {
+	top: 5px;
+	left: 3px;
+	font-weight: bold;
+}
+
+.header_1_menu li:nth-of-type(1) p::before {
+	content: 'TOP';
+}
+
+.header_1_menu li:nth-of-type(2) p::before {
+	content: 'TOPICS';
+}
+
+.header_1_menu li:nth-of-type(3) p::before {
+	content: '北関堂について';
+}
+
+.header_1_menu li:nth-of-type(4) p::before {
+	content: '店舗アクセス';
+}
+
+.header_1_menu li:nth-of-type(5) p::before {
+	content: '商品紹介';
+}
+
 .header_1_menu p {
+	position: relative;
+	top: 0;
+	left: 0;
+	transition: all .2s;
 	display: inline-block;
 	font-size: clamp(16px, 1.563vw, 32px);
 	color: rgb(84, 35, 35);
 	white-space: nowrap;
+	font-weight: bold;
 }
 
 .se1_mainVisual {
@@ -343,11 +394,8 @@ footer small {
 		top: 0;
 		right: 0;
 		display: flex;
-		width: 20vw;
-		height: 20vw;
-		max-width: 60px;
-		max-height: 7vh;
-		min-height: 60px;
+		width: min(20vw, 50px);
+		height: clamp(50px, 20vw, 7vh);
 		justify-content: center;
 		align-items: center;
 		z-index: 10001;
@@ -391,7 +439,7 @@ footer small {
 	}
 
 	header {
-		min-height: 60px;
+		height: clamp(50px, 20vw, 7vh);
 		display: block;
 		background-color: rgba(255, 255, 255, 0.7);
 		transition: all 0.3s;
@@ -400,6 +448,7 @@ footer small {
 
 	header nav {
 		height: 100%;
+		padding-left: 5vw;
 	}
 
 	header nav .hmb_swOn {
@@ -564,5 +613,4 @@ footer small {
 	#se2 .table dd:last-child img {
 		object-position: center;
 	}
-
 }
