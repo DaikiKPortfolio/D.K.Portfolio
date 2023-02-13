@@ -20,7 +20,7 @@
             <a href="#top"></a>
         </div>
 
-        <div class="hamburgerMenu">
+        <div class="hamburgerMenu" id="hamb">
             <!-- <input type="checkbox" id="hamb_btn-check" onclick="hamb_btn_on();"> -->
             <input type="checkbox" id="hamb_btn-check">
             <label for="hamb_btn-check" class="hamb_btn">
@@ -36,37 +36,37 @@
                     <h1>北<span>関</span>堂</h1>
                     <ul class="header_1_menu">
                         <li>
-                            <a href="javascript:hmbMenuClick_top();" name="top" onclick="hamb_btn_off();">
+                            <a href="javascript:hmbMenuClick_top();">
                                 <p>TOP</p>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:hmbMenuClick_se2();" name="se2" onclick="hamb_btn_off();">
+                            <a href="javascript:hmbMenuClick_se2();">
                                 <p>TOPICS</p>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:hmbMenuClick_se3();" name="se3" onclick="hamb_btn_off();">
+                            <a href="javascript:hmbMenuClick_se3();">
                                 <p>北関堂について</p>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:hmbMenuClick_se5();" name="se5" onclick="hamb_btn_off();">
+                            <a href="javascript:hmbMenuClick_se5();">
                                 <p>店舗アクセス</p>
                             </a>
                         </li>
                         <li>
-                            <a href="product.html" onclick="hamb_btn_off();">
+                            <a href="product.html">
                                 <p>商品紹介</p>
                             </a>
                         </li>
                         <li>
-                            <a href="jobInformation.html" onclick="hamb_btn_off();">
+                            <a href="jobInformation.html">
                                 <p>採用情報</p>
                             </a>
                         </li>
                         <li class="hmb_swOn">
-                            <a href="#top" onclick="hamb_btn_off();">
+                            <a href="#top">
                                 <p>公式Twitter</p>
                                 <img src="./img/2021 Twitter logo - blue.png">
                             </a>
@@ -260,80 +260,63 @@
         <!-- <<< sectionIdJump >>> -->
         <script>
             function hmbMenuClick_top() {
+                let windowSize = window.innerWidth;
                 window.scrollTo(0, 0);
-                console.log("topScroll");
+                if (windowSize <= 767.5) {
+                    hmb_check.checked = false;
+                }
             }
             function hmbMenuClick_se2() {
                 let sCtop = document.getElementById("se2").getBoundingClientRect().top;
                 let windowSize = window.innerWidth;
                 let newY = window.scrollY + sCtop;
                 let headerHeight = document.getElementById('header').clientHeight;
-                newY = newY - headerHeight;
+                if (windowSize <= 767.5) {
+                    headerHeight = document.querySelector('#hamb .hamb_btn').clientHeight;
+                    newY = newY - headerHeight;
+                    hmb_check.checked = false;
+                } else {
+                    newY = newY - headerHeight;
+                }
                 window.scrollTo(0, newY);
-                console.log("se2Scroll");
             }
             function hmbMenuClick_se3() {
                 let sCtop = document.getElementById("se3").getBoundingClientRect().top;
                 let windowSize = window.innerWidth;
                 let newY = window.scrollY + sCtop;
                 let headerHeight = document.getElementById('header').clientHeight;
-                newY = newY - headerHeight;
+                if (windowSize <= 767.5) {
+                    headerHeight = document.querySelector('#hamb .hamb_btn').clientHeight;
+                    newY = newY - headerHeight;
+                    hmb_check.checked = false;
+                } else {
+                    newY = newY - headerHeight;
+                }
                 window.scrollTo(0, newY);
-                console.log("se3Scroll");
             }
             function hmbMenuClick_se5() {
                 let sCtop = document.getElementById("se5").getBoundingClientRect().top;
                 let windowSize = window.innerWidth;
                 let newY = window.scrollY + sCtop;
                 let headerHeight = document.getElementById('header').clientHeight;
-                newY = newY - headerHeight;
+                if (windowSize <= 767.5) {
+                    headerHeight = document.querySelector('#hamb .hamb_btn').clientHeight;
+                    newY = newY - headerHeight;
+                    hmb_check.checked = false;
+                } else {
+                    newY = newY - headerHeight;
+                }
                 window.scrollTo(0, newY);
-                console.log("se5Scroll");
             }
         </script>
 
-        <!-- <script>
+        <script>
             const hmb_check = document.getElementById("hamb_btn-check");
             const hmb_html = document.querySelector(".hmb_btn_on");
             const returnTop = document.querySelector('#page_top');
             let STORAGE_KEY = "scrollY";
             let stockNumber = 0;
             let scrolTop = 0;
-
-            function hamb_btn_on() {
-                let scrolTop = pageYOffset;
-                if (hmb_check.checked == true) {
-                    stockNumber = scrolTop;
-                    $(hmb_html).css({ "position": "fixed" });
-                    $(hmb_html).css({ "overflow": "hidden" });
-                } else if (hmb_check.checked == false) {
-                    $(hmb_html).css({ "position": "static" });
-                    $(hmb_html).css({ "overflow": "visible" });
-                    window.scrollBy(0, stockNumber);
-                } else {
-                    $(hmb_html).css({ "position": "static" });
-                    $(hmb_html).css({ "overflow": "visible" });
-                    window.scrollBy(0, stockNumber);
-                }
-            }
-
-            function hamb_btn_off() {
-                // let getId = target.id;
-                // console.log(href);
-                let a = document.querySelector('[name=""]');
-                console.log(a);
-                hmb_check.checked = false;
-                $(hmb_html).css({ "position": "static" });
-                $(hmb_html).css({ "overflow": "visible" });
-                switch (a) {
-                    case "#se3":
-                        console.log(getId.href);
-                    case "#se4":
-                        console.log(getId.href);
-                    default:
-                        console.log("なし");
-                }
-            } -->
 
             window.addEventListener('scroll', () => {
                 var pageYOffset = window.pageYOffset;
@@ -365,7 +348,7 @@
                     ScrollReveal().reveal('#se1', {
                         origin: 'bottom',
                         delay: 0,
-                        duration: 600,
+                        duration: 300,
                         reset: false,
                         afterReveal: function (el) {
                             el.classList.add('blr_reset');
