@@ -1670,7 +1670,13 @@ section .seBody .content h3 {
 	text-align: center;
 }
 
-#se5 .content ul li:last-child .imgBox a::before {
+#se5 .content ul li:last-child .imgBox button {
+	background-color: unset;
+	border: none;
+}
+
+/* #se5 .content ul li:last-child .imgBox a::before, */
+#se5 .content ul li:last-child .imgBox button::before {
 	content: 'こちらのサイトを開く';
 	position: absolute;
 	z-index: 1;
@@ -1686,7 +1692,8 @@ section .seBody .content h3 {
 	text-shadow: 0px 0px 5px #ff0000;
 }
 
-#se5 .content ul li:last-child .imgBox a:hover:before {
+/* #se5 .content ul li:last-child .imgBox a:hover:before, */
+#se5 .content ul li:last-child .imgBox button:hover:before {
 	background: linear-gradient(90deg, rgba(255, 0, 0, 0.7) 0%, rgba(251, 80, 80, 0.4) 50%, rgba(255, 186, 186, 0.2) 100%);
 	background-size: 200% 100%;
 	transition: all 2s;

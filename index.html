@@ -346,7 +346,8 @@
 							</li>
 							<li>
 								<span class="text1">2016 / ４:</span>
-								<span class="text2">株式会社 正栄プロジェクト<br> <span>フロアアテンダント </span><span>入社 </span><span>(2018/3:神奈川県へ転勤) </span></span>
+								<span class="text2">株式会社 正栄プロジェクト<br> <span>フロアアテンダント </span><span>入社
+									</span><span>(2018/3:神奈川県へ転勤) </span></span>
 							</li>
 							<li>
 								<span class="text1">2019 / ３:</span>
@@ -362,7 +363,8 @@
 							</li>
 							<li>
 								<span class="text1">2019 / 10:</span>
-								<span class="text2">株式会社 S.B.C. 正社員 <span>入社 </span><br><span>(委託先：</span><span>①通信サービスのテスト業務</span><span>②資料や議事録の作成)</span></span>
+								<span class="text2">株式会社 S.B.C. 正社員 <span>入社
+									</span><br><span>(委託先：</span><span>①通信サービスのテスト業務</span><span>②資料や議事録の作成)</span></span>
 							</li>
 							<li>
 								<span class="text1">2021 / ４:</span>
@@ -411,9 +413,10 @@
 						</li>
 						<li>
 							<div class="imgBox">
-								<a href="http://daikikaneko.html.xdomain.jp/myfolderdk/anninzi">
+								<button id="wBton1" onclick="windowOpen1();">
 									<img src="./img/Portfolio作品.png" alt="安仁寺">
-								</a>
+								</button>
+								<!-- </a> -->
 							</div>
 						</li>
 					</ul>
@@ -431,9 +434,9 @@
 						</li>
 						<li>
 							<div class="imgBox">
-								<a href="wagashi/index.html">
+								<button id="wBton2" onclick="windowOpen2();">
 									<img src="./img/Portfolio作品2.png" alt="北関堂">
-								</a>
+								</button>
 							</div>
 						</li>
 					</ul>
@@ -451,9 +454,9 @@
 						</li>
 						<li>
 							<div class="imgBox">
-								<a href="kitakanzinzya/index.html">
+								<button id="wBton3" onclick="windowOpen3();">
 									<img src="./img/Portfolio作品3.png" alt="北関神社">
-								</a>
+								</button>
 							</div>
 						</li>
 					</ul>
@@ -564,6 +567,28 @@
 				document.getElementById('hamb_btn-check').checked = false;
 				hmbMenuOpenCheck();
 			}
+		}
+	</script>
+
+	<!-- <<< windowOpenBotton >>> -->
+	<script>
+		function windowOpen1() {
+			let wBton = document.getElementById("wBton1");
+			wBton.addEventListener('click', () => {
+				open('anninzi/index.html');
+			});
+		}
+		function windowOpen2() {
+			let wBton = document.getElementById("wBton2");
+			wBton.addEventListener('click', () => {
+				open('wagashi/index.html');
+			});
+		}
+		function windowOpen3() {
+			let wBton = document.getElementById("wBton3");
+			wBton.addEventListener('click', () => {
+				open('kitakanzinzya/index.html');
+			});
 		}
 	</script>
 
@@ -823,6 +848,7 @@
 				"VERSION": "1.0.0"
 			}
 		);
+
 		createjs.Ticker.framerate = 60;
 		createjs.Ticker.on("tick", handleTick);
 		function handleTick() {
@@ -833,4 +859,5 @@
 		}
 	</script>
 </body>
+
 </html>
