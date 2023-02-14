@@ -27,10 +27,6 @@ html {
 	height: -webkit-fill-available;
 }
 
-.hmb_btn_on {
-	overflow: visible;
-}
-
 body {
 	min-height: -webkit-fill-available;
 }
@@ -342,6 +338,20 @@ footer small {
 	color: rgb(208, 115, 130);
 }
 
+.blr_set {
+	filter: blur(10px);
+	transition: all .5s ease;
+}
+
+.blr_set2 {
+	filter: blur(5px) grayscale(100%);
+	transition: all .5s;
+}
+
+.blr_reset {
+	filter: blur(0px);
+}
+
 #hamb_btn-check,
 .hmb_swOn {
 	display: none;
@@ -604,4 +614,5 @@ footer small {
 	#se2 .table dd:last-child img {
 		object-position: center;
 	}
+
 }

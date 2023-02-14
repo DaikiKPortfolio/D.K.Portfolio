@@ -27,10 +27,6 @@ html {
 	height: -webkit-fill-available;
 }
 
-.hmb_btn_on {
-	overflow: visible;
-}
-
 body {
 	min-height: -webkit-fill-available;
 	background-image: url(./img/background-sizeover.jpg);
@@ -302,10 +298,6 @@ header h1 span {
 	border-bottom: 2px solid red;
 }
 
-/* .se3_overview {
-	padding-top: max(80px, 7vh);
-} */
-
 #se3 .title {
 	height: fit-content;
 	padding: 5px 0 5px 2em;
@@ -341,10 +333,6 @@ header h1 span {
 #se3 .content_1 span {
 	display: inline-block;
 }
-
-/* #se3 .content_1 ul li:last-child p {
-	text-align: end;
-} */
 
 .se4_subVisual {
 	height: fit-content;
@@ -890,19 +878,15 @@ footer small {
 	.se4_subVisual {
 		max-width: 500px;
 		margin: 0 auto;
+		padding-bottom: 120px;
 	}
 
 	#se4 .content_1-spring,
 	#se4 .content_1-summer,
 	#se4 .content_1-autumn,
 	#se4 .content_1-winter {
-		/* margin-top: 5em; */
 		padding-top: 0;
 	}
-
-	/* #se4 .content_1-spring {
-		padding-top: 0;
-	} */
 
 	#se4 .content_1-spring,
 	#se4 .content_1-summer,
@@ -963,10 +947,6 @@ footer small {
 		padding-top: 0;
 	}
 
-	/* #se4 .content_1-spring .text_1, #se4 .content_1-autumn .text_1 {
-		padding-top: 0;
-	} */
-
 	#se4 .content_1-spring .text_1 div,
 	#se4 .content_1-summer .text_1 div,
 	#se4 .content_1-autumn .text_1 div,
@@ -987,7 +967,6 @@ footer small {
 	.se5_access {
 		max-width: 500px;
 		margin: 0 auto;
-		/* padding-top: 120px; */
 	}
 
 	#se5 .content_1 {

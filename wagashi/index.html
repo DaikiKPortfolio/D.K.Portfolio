@@ -21,7 +21,6 @@
         </div>
 
         <div class="hamburgerMenu" id="hamb">
-            <!-- <input type="checkbox" id="hamb_btn-check" onclick="hamb_btn_on();"> -->
             <input type="checkbox" id="hamb_btn-check">
             <label for="hamb_btn-check" class="hamb_btn">
                 <span></span>
@@ -248,7 +247,7 @@
 
         <footer>
             <p>公式Twitter</p>
-            <a href="#top" onclick="hamb_btn_off();">
+            <a href="#top">
                 <p>新着情報はこちら</p>
             </a>
             <div class="img_1">
@@ -312,11 +311,7 @@
 
         <script>
             const hmb_check = document.getElementById("hamb_btn-check");
-            const hmb_html = document.querySelector(".hmb_btn_on");
             const returnTop = document.querySelector('#page_top');
-            let STORAGE_KEY = "scrollY";
-            let stockNumber = 0;
-            let scrolTop = 0;
 
             window.addEventListener('scroll', () => {
                 var pageYOffset = window.pageYOffset;

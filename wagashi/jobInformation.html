@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./Hina_Mincho/HinaMincho-Regular.ttf">
     <link rel="stylesheet" href="jobInformationCSS.css">
     <link rel="shortcut icon" href="./img/favicon.ico">
@@ -70,7 +71,7 @@
         </div>
 
         <main>
-            <section class="se1_mainVisual" id="se1">
+            <section class="se1_mainVisual blr_set2" id="se1">
                 <div class="text_1">
                     <h1>採用情報</h1>
                 </div>
@@ -166,34 +167,7 @@
 
         <script>
             const hmb_check = document.getElementById("hamb_btn-check");
-            const hmb_html = document.querySelector(".hmb_btn_on");
             const returnTop = document.querySelector('#page_top');
-            var STORAGE_KEY = "scrollY";
-            var stockNumber = 0;
-            var scrolTop = 0;
-
-            function hamb_btn_on() {
-                var scrolTop = pageYOffset;
-                if (hmb_check.checked == true) {
-                    stockNumber = scrolTop;
-                    $(hmb_html).css({ "position": "fixed" });
-                    $(hmb_html).css({ "overflow": "hidden" });
-                } else if (hmb_check.checked == false) {
-                    $(hmb_html).css({ "position": "static" });
-                    $(hmb_html).css({ "overflow": "visible" });
-                    window.scrollBy(0, stockNumber);
-                } else {
-                    $(hmb_html).css({ "position": "static" });
-                    $(hmb_html).css({ "overflow": "visible" });
-                    window.scrollBy(0, stockNumber);
-                }
-            }
-
-            function hamb_btn_off() {
-                hmb_check.checked = false;
-                $(hmb_html).css({ "position": "static" });
-                $(hmb_html).css({ "overflow": "visible" });
-            }
 
             window.addEventListener('scroll', () => {
                 var pageYOffset = window.pageYOffset;
@@ -215,6 +189,45 @@
                 } else {
                     sampleElement.classList.remove('arrowHidden');
                 }
+            }
+        </script>
+
+        <!-- <<< sectionSlideIn >>> -->
+        <script>
+            $(document).ready(function () {
+                ScrollReveal().reveal('#se1', {
+                    origin: 'bottom',
+                    delay: 0,
+                    duration: 300,
+                    reset: false,
+                    afterReveal: function (el) {
+                        el.classList.add('blr_reset');
+                    }
+                });
+            });
+            window.onload = function () {
+                ScrollReveal().reveal('#se2 .content_1', {
+                    delay: 700,
+                    duration: 2300,
+                    opacity: 0,
+                    origin: 'right',
+                    distance: '200px',
+                    reset: false
+                });
+                ScrollReveal().reveal('#se2 .content_2 li:first-of-type,#se2 .content_2 li:last-of-type', {
+                    duration: 2300,
+                    opacity: 0,
+                    origin: 'right',
+                    distance: '200px',
+                    reset: false
+                });
+                ScrollReveal().reveal('#se2 .content_2 li:nth-of-type(2)', {
+                    duration: 2300,
+                    opacity: 0,
+                    origin: 'left',
+                    distance: '200px',
+                    reset: false
+                });
             }
         </script>
     </div>
