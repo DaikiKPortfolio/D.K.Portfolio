@@ -13,6 +13,7 @@
 	<script src="./slick/slick.min.js"></script>
 	<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
 	<script src="https://cdn.rawgit.com/ics-creative/ParticleJS/release/1.0.0/libs/particlejs.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
 	<link rel="shortcut icon" href="./img/favicon.ico">
 	<title>D.K.Portfolio</title>
 </head>
@@ -410,7 +411,7 @@
 						</li>
 						<li>
 							<div class="imgBox">
-								<a href="anninzi/index.html">
+								<a href="http://daikikaneko.html.xdomain.jp/myfolderdk/anninzi">
 									<img src="./img/Portfolio作品.png" alt="安仁寺">
 								</a>
 							</div>
@@ -599,22 +600,11 @@
 
 		function hmbMenuOpenCheck() {
 			if (document.getElementById('hamb_btn-check').checked) {
-				// document.getElementById("hmsoSW").classList.add("hmbFadeIn");
 				document.addEventListener('touchmove', disableScroll, { passive: false });
 				document.addEventListener('mousewheel', disableScroll, { passive: false });
 			} else {
 				document.removeEventListener('touchmove', disableScroll, { passive: false });
 				document.removeEventListener('mousewheel', disableScroll, { passive: false });
-				// document.getElementById("hmsoSW").classList.remove("hmbFadeIn");
-				// document.getElementById("hmsoSW").classList.add("hmbFadeOut");
-				// window.setTimeout(function () {
-				// 	if (pageYOffset > position) {
-				// 		document.getElementById("hmsoSW").classList.remove("hmbFadeIn-top");
-				// 	} else {
-				// 		document.getElementById("hmsoSW").classList.remove("hmbFadeIn-main");
-				// 	}
-				// 	document.getElementById("hmsoSW").classList.remove("hmbFadeOut");
-				// }, 100);
 			}
 		}
 	</script>
@@ -638,7 +628,6 @@
 	</script>
 
 	<!-- <<< sectionSlideIn >>> -->
-	<script src="https://unpkg.com/scrollreveal"></script>
 	<script>
 		ScrollReveal().reveal('section .title', {
 			duration: 1000,
@@ -834,7 +823,6 @@
 				"VERSION": "1.0.0"
 			}
 		);
-
 		createjs.Ticker.framerate = 60;
 		createjs.Ticker.on("tick", handleTick);
 		function handleTick() {
@@ -845,5 +833,4 @@
 		}
 	</script>
 </body>
-
 </html>
