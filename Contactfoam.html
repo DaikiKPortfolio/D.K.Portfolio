@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactCSS.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="https://cdn.rawgit.com/ics-creative/ParticleJS/release/1.0.0/libs/particlejs.min.js"></script>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <title>D.K.Portfolio - お問い合わせ</title>
+</head>
+
+<body>
+    <div id="hmsoSW" class="hmbFadeIn-main"></div>
+    <div class="sideLeft">
+        <canvas width="500" height="500" id="myCanvasL"></canvas>
+    </div>
+    <div class="sideRight">
+        <canvas width="500" height="500" id="myCanvasR"></canvas>
+    </div>
+
+    <div class="hamburgerMenu" id="hambSW">
+        <input type="checkbox" id="hamb_btn-check" onclick="hmbMenuOpenCheck()">
+        <label for="hamb_btn-check" class="hamb_btn">
+            <div class="deltaHeightTop">
+                <div class="left">
+                    <div class="tr_sml"></div>
+                    <div class="tr_sml"></div>
+                    <div class="tr_sml"></div>
+                    <div class="tr_sml"></div>
+                </div>
+            </div>
+            <div class="deltaHeightBottom">
+                <div class="right">
+                    <div class="tr_sml"></div>
+                    <div class="tr_sml"></div>
+                    <div class="tr_sml"></div>
+                    <div class="tr_sml"></div>
+                </div>
+            </div>
+            <div class="deltaBox">
+                <div class="deltaLeft"></div>
+                <div class="deltaRight"></div>
+            </div>
+            <div class="lineBox">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+                <span class="close">close</span>
+            </div>
+            <div class="menuBox">
+                <div class="mb_1">
+                    <div class="deltaLeft"></div>
+                    <div class="mb_text">
+                        <a href="index.html#se1">My Profile</a>
+                    </div>
+                    <div class="deltaRight"></div>
+                </div>
+                <div class="mb_2">
+                    <div class="deltaLeft"></div>
+                    <div class="mb_text">
+                        <a href="index.html#se2">Advantage<span> / </span><br>Week point</a>
+                    </div>
+                    <div class="deltaRight"></div>
+                </div>
+                <div class="mb_3">
+                    <div class="deltaLeft"></div>
+                    <div class="mb_text">
+                        <a href="index.html#se3">Hobby</a>
+                    </div>
+                    <div class="deltaRight"></div>
+                </div>
+                <div class="mb_4">
+                    <div class="deltaLeft"></div>
+                    <div class="mb_text">
+                        <a href="index.html#se4">Career</a>
+                    </div>
+                    <div class="deltaRight"></div>
+                </div>
+                <div class="mb_5">
+                    <div class="deltaLeft"></div>
+                    <div class="mb_text">
+                        <a href="index.html#se5">Work</a>
+                    </div>
+                    <div class="deltaRight"></div>
+                </div>
+                <div class="mb_6">
+                    <div class="deltaLeft"></div>
+                    <div class="mb_text">
+                        <a href="Contactfoam.html">Contact</a>
+                    </div>
+                    <div class="deltaRight"></div>
+                </div>
+            </div>
+        </label>
+    </div>
+
+    <main>
+        <section class="ContactFoam" id="seCon">
+            <div class="title">
+                <div class="left">
+                    <div class="tr_big"></div>
+                    <div class="tr_sml"></div>
+                    <div class="tr_sml"></div>
+                    <div class="tr_sml"></div>
+                    <div class="tr_sml"></div>
+                </div>
+                <h2>Contact</h2>
+                <div class="right">
+                    <div class="tr_big"></div>
+                    <div class="tr_sml"></div>
+                    <div class="tr_sml"></div>
+                    <div class="tr_sml"></div>
+                    <div class="tr_sml"></div>
+                </div>
+            </div>
+
+            <div class="seBody">
+                <p class="text">何かお問合せしたい事がございましたらお手数ですが<br>こちらからお願いいたします。</p>
+                    <a class="mailSubmit" href="mailto:daikikaneko037@gmail.com?subject=お問い合わせ"><span>ご自身</span>の<span>メールアプリ</span>で<span>行う方</span>は<span>こちらから</span></a>
+                <div class="content">
+                    <h3>お問い合わせ</h3>
+
+                    <div class="textBox">
+                        <form id="form"
+                            action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSc6ZPpyN5dtRIB65nAgVhdeOLqGgZpMKPTN4FyU35LjVVVzJw/formResponse">
+                            <table id="table1">
+                                <tr>
+                                    <th class="mitem">
+                                        <p id="required">Name</p>
+                                        <p>Kana</p>
+                                    </th>
+                                    <td class="mbody">
+                                        <input id="form1" type="text" name="entry.1751327625" placeholder="山田 太郎"
+                                            required>
+                                        <input id="form2" type="text" name="entry.1623936374"
+                                            placeholder="ヤマダ タロウ または Yamada Taro" required>
+                                    </td>
+                                </tr>
+
+                                <tr id="required">
+                                    <th class="mitem">Mail</th>
+                                    <td class="mbody">
+                                        <input id="form3" type="email" name="entry.1916231943"
+                                            placeholder="sample123@abc.co.jp" required>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th class="mitem">Tell</th>
+                                    <td class="mbody">
+                                        <input type="tel" name="entry.54416019"
+                                            placeholder="01234567890 または 012-3456-7890">
+                                    </td>
+                                </tr>
+
+                                <tr id="required">
+                                    <th class="mitem">Inquiry</th>
+                                    <td class="mbody">
+                                        <textarea id="form4" name="entry.1517151373" class="textarea" wrap="off"
+                                            placeholder="お問い合わせ内容をご記載ください。&#13;Please enter the content of your inquiry."
+                                            required></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- <<<   tablet size   >>> -->
+                            <table id="table2">
+                                <tr>
+                                    <th class="mitem">
+                                        <p id="required">Name</p>
+                                    </th>
+                                    <td class="mbody">
+                                        <input id="form1" type="text" name="entry.1751327625" placeholder="山田 太郎"
+                                            required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="mitem">
+                                        <p>Kana</p>
+                                    </th>
+                                    <td class="mbody">
+                                        <input id="form2" type="text" name="entry.1623936374"
+                                            placeholder="ヤマダ タロウ または Yamada Taro" required>
+                                    </td>
+                                </tr>
+
+                                <tr id="required">
+                                    <th class="mitem">Mail</th>
+                                    <td class="mbody">
+                                        <input id="form3" type="email" name="entry.1916231943"
+                                            placeholder="sample123@abc.co.jp" required>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th class="mitem">Tell</th>
+                                    <td class="mbody">
+                                        <input type="tel" name="entry.54416019"
+                                            placeholder="01234567890 または 012-3456-7890">
+                                    </td>
+                                </tr>
+
+                                <tr id="required">
+                                    <th class="mitem">Inquiry</th>
+                                    <td class="mbody">
+                                        <textarea id="form4" name="entry.1517151373" class="textarea" wrap="off"
+                                            placeholder="お問い合わせ内容をご記載ください。&#13;Please enter the content of your inquiry."
+                                            required></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- <<<   sp size   >>> -->
+                            <table id="table3">
+                                <tr>
+                                    <th class="mitem">
+                                        <p id="required">Name</p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="mbody">
+                                        <input id="form1" type="text" name="entry.1751327625" placeholder="山田 太郎"
+                                            required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="mitem">
+                                        <p id="required">Kana</p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="mbody">
+                                        <input id="form2" type="text" name="entry.1623936374"
+                                            placeholder="ヤマダ タロウ または Yamada Taro" required>
+                                    </td>
+                                </tr>
+
+                                <tr id="required">
+                                    <th class="mitem">Mail</th>
+                                </tr>
+                                <tr>
+                                    <td class="mbody">
+                                        <input id="form3" type="email" name="entry.1916231943"
+                                            placeholder="sample123@abc.co.jp" required>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th class="mitem">Tell</th>
+                                </tr>
+                                <tr>
+                                    <td class="mbody">
+                                        <input type="tel" name="entry.54416019"
+                                            placeholder="01234567890 または 012-3456-7890">
+                                    </td>
+                                </tr>
+
+                                <tr id="required">
+                                    <th class="mitem">Inquiry</th>
+                                </tr>
+                                <tr>
+                                    <td class="mbody">
+                                        <textarea id="form4" name="entry.1517151373" class="textarea" wrap="off"
+                                            placeholder="お問い合わせ内容をご記載ください。&#13;Please enter the content of your inquiry."
+                                            required></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="submitBack">
+                                <div class="left">
+                                    <div class="tr_big"></div>
+                                    <div class="tr_sml"></div>
+                                    <div class="tr_sml"></div>
+                                    <div class="tr_sml"></div>
+                                    <div class="tr_sml"></div>
+                                    <div id="hc" class="tr_sml"></div>
+                                </div>
+                                <button id="submitButton" class="msubmit" type="button"></button>
+                                <div class="right">
+                                    <div class="tr_big"></div>
+                                    <div class="tr_sml"></div>
+                                    <div class="tr_sml"></div>
+                                    <div class="tr_sml"></div>
+                                    <div class="tr_sml"></div>
+                                    <div id="hc" class="tr_sml"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <!-- <<< hamburgerMenu >>> -->
+    <script>
+        function disableScroll(event) {
+            event.preventDefault();
+        }
+
+        const position = Math.floor(window.innerHeight * 1);
+        const pageYOffset = window.pageYOffset;
+
+        function hmbMenuOpenCheck() {
+            if (document.getElementById('hamb_btn-check').checked) {
+                document.getElementById("hmsoSW").classList.add("hmbFadeIn");
+                document.addEventListener('touchmove', disableScroll, { passive: false });
+                document.addEventListener('mousewheel', disableScroll, { passive: false });
+            } else {
+                document.removeEventListener('touchmove', disableScroll, { passive: false });
+                document.removeEventListener('mousewheel', disableScroll, { passive: false });
+                document.getElementById("hmsoSW").classList.remove("hmbFadeIn");
+                document.getElementById("hmsoSW").classList.add("hmbFadeOut");
+                window.setTimeout(function () {
+                    document.getElementById("hmsoSW").classList.remove("hmbFadeOut");
+                }, 100);
+            }
+        }
+    </script>
+
+    <!-- <<< sectionSlideIn >>> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        window.onload = function () {
+            ScrollReveal().reveal('.content li', {
+                delay: 500,
+                duration: 2000,
+                opacity: 0,
+                origin: 'left',
+                distance: '150px',
+                reset: false
+            });
+            ScrollReveal().reveal('#seCon .content', {
+                delay: 500,
+                duration: 1500,
+                opacity: 0,
+                origin: 'left',
+                distance: '150px',
+                reset: false
+            });
+            ScrollReveal().reveal('#seCon .content li', {
+                delay: 500,
+                duration: 1500,
+                opacity: 0,
+                origin: 'bottom',
+                distance: '150px',
+                reset: false
+            });
+        }
+    </script>
+
+    <!-- <<< particleAnima >>> -->
+    <script>
+        stageL = new createjs.Stage("myCanvasL");
+        stageR = new createjs.Stage("myCanvasR");
+        particleSystemL = new particlejs.ParticleSystem();
+        particleSystemR = new particlejs.ParticleSystem();
+        stageL.addChild(particleSystemL.container);
+        stageR.addChild(particleSystemR.container);
+        particleSystemL.importFromJson(
+            {
+                "bgColor": "#5f3535",
+                "width": 1047,
+                "height": 563,
+                "emitFrequency": 40,
+                "startX": 548,
+                "startXVariance": 1024,
+                "startY": 271,
+                "startYVariance": 1024,
+                "initialDirection": 0,
+                "initialDirectionVariance": 0,
+                "initialSpeed": 0,
+                "initialSpeedVariance": 1,
+                "friction": 0.15,
+                "accelerationSpeed": 0.15,
+                "accelerationDirection": 270,
+                "startScale": 0,
+                "startScaleVariance": 0,
+                "finishScale": 1,
+                "finishScaleVariance": 0,
+                "lifeSpan": 140,
+                "lifeSpanVariance": 140,
+                "startAlpha": 1,
+                "startAlphaVariance": "0.5",
+                "finishAlpha": "0",
+                "finishAlphaVariance": "0",
+                "shapeIdList": [
+                    "triangle"
+                ],
+                "startColor": {
+                    "hue": 0,
+                    "hueVariance": 0,
+                    "saturation": 100,
+                    "saturationVariance": 0,
+                    "luminance": 64,
+                    "luminanceVariance": 50
+                },
+                "blendMode": true,
+                "alphaCurveType": "0",
+                "VERSION": "1.0.0"
+            }
+        );
+        particleSystemR.importFromJson(
+            {
+                "bgColor": "#5f3535",
+                "width": 1047,
+                "height": 563,
+                "emitFrequency": 40,
+                "startX": 548,
+                "startXVariance": 1024,
+                "startY": 271,
+                "startYVariance": 1024,
+                "initialDirection": 0,
+                "initialDirectionVariance": 0,
+                "initialSpeed": 0,
+                "initialSpeedVariance": 1,
+                "friction": 0.15,
+                "accelerationSpeed": 0.15,
+                "accelerationDirection": 90,
+                "startScale": 0.3,
+                "startScaleVariance": 1,
+                "finishScale": "0",
+                "finishScaleVariance": 1,
+                "lifeSpan": 140,
+                "lifeSpanVariance": 140,
+                "startAlpha": 1,
+                "startAlphaVariance": "0.5",
+                "finishAlpha": "0",
+                "finishAlphaVariance": "0",
+                "shapeIdList": [
+                    "triangle"
+                ],
+                "startColor": {
+                    "hue": 0,
+                    "hueVariance": 0,
+                    "saturation": 100,
+                    "saturationVariance": 0,
+                    "luminance": 64,
+                    "luminanceVariance": 50
+                },
+                "blendMode": true,
+                "alphaCurveType": "0",
+                "VERSION": "1.0.0"
+            }
+        );
+
+        createjs.Ticker.framerate = 60;
+        createjs.Ticker.on("tick", handleTick);
+        function handleTick() {
+            particleSystemL.update();
+            particleSystemR.update();
+            stageL.update();
+
+            stageR.update();
+        }
+    </script>
+
+    <!-- mailFoamCheck -->
+    <script>
+        const submitButton = document.getElementById("submitButton");
+
+        submitButton.onclick = () => {
+            let error1, error2, error3, error4;
+            let conversion;
+            let checkForm;
+            let lengthCount;
+            let title;
+            const pattern = /^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]+.[A-Za-z0-9]+$/;
+            for (i = 1; i <= 5; i++) {
+                if (i < 5) {
+                    conversion = document.getElementById('form' + i).value;
+                    checkForm = conversion.trim();
+                    checkForm = checkForm.replace(/^[s|　]+|[s|　]+$/g, '');
+                    lengthCount = checkForm.length;
+                }
+
+                switch (i) {
+                    case 1:
+                        title = "Name：";
+                        if (checkForm == "" || checkForm == null) {
+                            error1 = title + "名前が未入力です\n";
+                        } else if (lengthCount > 30) {
+                            error3 = title + "30文字までしか入力出来ません\n";
+                        } else {
+                            error1 = "";
+                        }
+                        break;
+                    case 2:
+                        title = "Name(Kana)：";
+                        if (checkForm == "" || checkForm == null) {
+                            error2 = title + "フリガナが未入力です\n";
+                        } else if (lengthCount > 30) {
+                            error3 = title + "30文字までしか入力出来ません\n";
+                        } else {
+                            error2 = "";
+                        }
+                        break;
+                    case 3:
+                        title = "MailAddress：";
+                        if (checkForm == "" || checkForm == null) {
+                            error3 = title + "アドレスが未入力です\n";
+                        } else if (lengthCount > 50) {
+                            error3 = title + "50文字までしか入力出来ません\n";
+                        } else if (pattern.test(checkForm)) {
+                            error3 = "";
+                        } else {
+                            error3 = title + "全角または正規ではないメールアドレスが入力されています\n";
+                        }
+                        break;
+                    case 4:
+                        title = "Inquiry：";
+                        if (checkForm == "" || checkForm == null) {
+                            error4 = title + "お問い合わせ内容が未入力です";
+                        } else if (lengthCount > 400) {
+                            error3 = title + "400文字までしか入力出来ません\n";
+                        } else {
+                            error4 = "";
+                        }
+                        break;
+                    default:
+                        if (error1 == "" && error2 == "" && error3 == "" && error4 == "") {
+                            let submitCheckFlg = window.confirm("記載していただいた内容で送信してもよろしいでしょうか？");
+                            if (submitCheckFlg) {
+                                const formData = new FormData(form)
+                                const action = form.getAttribute("action")
+                                const options = {
+                                    method: 'POST',
+                                    body: formData,
+                                }
+
+                                fetch(action, options);
+                                setTimeout("location.href='ContactfoamEnd.html'", 500);
+                                break;
+                            } else {
+                                alert("キャンセル致しました");
+                                break;
+                            }
+                        } else {
+                            alert(error1 + error2 + error3 + error4);
+                            break;
+                        }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
