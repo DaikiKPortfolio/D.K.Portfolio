@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="./Hina_Mincho/HinaMincho-Regular.ttf">
+    <link rel="stylesheet" href="indexCSS.css">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <title>北関神社</title>
+</head>
+
+<body>
+    <div class="designlineVertical_top lineVer_1"></div>
+    <div class="designlineVertical_top lineVer_2"></div>
+
+    <div class="hamburgerMenu" id="hamb">
+        <input type="checkbox" id="hamb_btn-check">
+        <label for="hamb_btn-check" class="hamb_btn">
+            <span></span>
+        </label>
+
+        <header>
+            <div class="header_1_logo">
+                <a href="#top">
+                    <img src="./img/logo.png" alt="">
+                </a>
+                <p class="hmb_swOn">北関神社</p>
+            </div>
+            <ul class="header_2_menu">
+                <li>
+                    <a href="javascript:contentsMenuClick_no1();" onclick="hamb_btn_off();">
+                        <img src="./img/shimenawa.png" alt="">
+                        <p class="hmb_swOff">神社の歴史</p>
+                        <p class="hmb_swOn">当神社について</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:contentsMenuClick_no2();" onclick="hamb_btn_off();">
+                        <img src="./img/gavel.png" alt="">
+                        <p>祭典・祈祷</p>
+                    </a>
+                </li>
+                <li class="hmb_swOn">
+                    <a href="javascript:contentsMenuClick_no3();" onclick="hamb_btn_off();">
+                        <p>ご参拝・ご祈祷</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:contentsMenuClick_no4();" onclick="hamb_btn_off();">
+                        <img src="./img/clock.png" alt="">
+                        <p>参拝時間</p>
+                    </a>
+                </li>
+                <li class="hmb_swOn">
+                    <a href="javascript:contentsMenuClick_no5();" onclick="hamb_btn_off();">
+                        <img src="./img/clock.png" alt="">
+                        <p>お知らせ</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:contentsMenuClick_no6();">
+                        <img src="./img/parking.png" alt="">
+                        <p>アクセス</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:contentsMenuClick_no8();" onclick="hamb_btn_off();">
+                        <img src="./img/parking.png" alt="">
+                        <p>アクセス</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:contentsMenuClick_no7();" onclick="hamb_btn_off();">
+                        <img src="./img/question.png" alt="">
+                        <p class="hmb_swOff">Q & A</p>
+                        <p class="hmb_swOn">よくある質問</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#top" onclick="hamb_btn_off();">
+                        <img src="./img/2021 Twitter logo - white.png">
+                        <img src="./img/2021 Twitter logo - blue.png">
+                        <p>Twitter</p>
+                    </a>
+                </li>
+            </ul>
+        </header>
+    </div>
+
+    <main>
+        <section class="se1_mainVisual" id="top">
+            <div class="mainImg">
+                <img src="./img/hero-pc.png" alt="">
+                <img src="./img/hero-sp.png" alt="">
+            </div>
+            <div class="title">
+                <img src="./img/logo.png" alt="">
+                <h1>北関神社</h1>
+            </div>
+        </section>
+
+        <section class="se2_mainContents">
+
+            <div class="sideMenu">
+                <ul class="list">
+                    <li>北関神社</li>
+                    <li><a href="javascript:contentsMenuClick_no1();">当神社について</a></li>
+                    <li><a href="javascript:contentsMenuClick_no2();">祭典と行事</a></li>
+                    <li><a href="javascript:contentsMenuClick_no3();">ご参拝・ご祈祷</a></li>
+                    <li><a href="javascript:contentsMenuClick_no4();">参拝時間</a></li>
+                    <li><a href="javascript:contentsMenuClick_no5();">お知らせ</a></li>
+                    <li><a href="javascript:contentsMenuClick_no6();">アクセス</a></li>
+                    <li><a href="javascript:contentsMenuClick_no7();">よくある質問</a></li>
+                    <li>
+                        <a href="#top">Twitter</a>
+                        <img src="./img/2021 Twitter logo - blue.png">
+                    </li>
+                </ul>
+                <div class="sideImg"></div>
+            </div>
+
+            <div class="contentsBox">
+                <div class="content_1">
+                    <div class="contentBody" id="no1">
+                        <div class="title">
+                            <h2>当神社について</h2>
+                            <img src="./img/kumihimo1.png" alt="">
+                        </div>
+
+                        <p class="text_1">
+                            <span class="span_1">豊玉姫をお祀りしております。</span>
+                            <span>
+                                豊玉姫は、浦島太郎に登場する「乙姫」のモデルとなった神様といわれ、
+                                初代天皇「神武天皇」の祖母にあたります。
+                            </span>
+                            <span>
+                                豊玉姫は縁結びの神様として有名ですが、家内安全・商売繁盛・
+                                航海安全の守り神でもあります。
+                            </span>
+                        </p>
+                        <a href="contents.html#no1" class="img_1">
+                            <img src="./img/button01.png" alt="">
+                        </a>
+                    </div>
+                    <div class="img_2">
+                        <img src="./img/about-image-pc.png" alt="">
+                        <img src="./img/about-image-sp.png" alt="">
+                    </div>
+                </div>
+
+                <div class="content_2">
+                    <ul>
+                        <li class="contentBody" id="no2">
+                            <div class="title">
+                                <h2>祭典と行事</h2>
+                                <img src="./img/kumihimo1.png" alt="">
+                            </div>
+                            <p class="text_1">
+                                1月1日の歳旦祭に始まり、12月1日の大赦式、
+                                除夜祭に至るまで、移ろいゆく季節とともに
+                                さまざまな祭典を執り行っております。
+                            </p>
+                            <div class="img_1">
+                                <img src="./img/ema-pc.png" alt="絵馬">
+                                <img src="./img/ema-sp.png" alt="絵馬">
+                                <a href="contents.html#no2"><img src="./img/button02.png" alt=""></a>
+                            </div>
+                        </li>
+                        <li class="contentBody" id="no3">
+                            <div class="title">
+                                <h2>ご参拝・ご祈祷</h2>
+                                <img src="./img/kumihimo1.png" alt="">
+                            </div>
+                            <p class="text_1">
+                                家内安全、商売繁盛、安産祈願、七五三詣、厄年祓、
+                                神前結婚式などの人生儀礼のご祈祷のほか、
+                                地鎮祭・神棚清祓・開店清祓など現地へ出向いての祭儀も
+                                ご奉仕申し上げております。
+                            </p>
+                            <a href="contents.html#no3" class="img_1">
+                                <img src="./img/button03.png" alt="">
+                            </a>
+                        </li>
+                        <li class="contentBody" id="no4">
+                            <div class="title">
+                                <h2>参拝時間</h2>
+                                <img src="./img/kumihimo1.png" alt="">
+                            </div>
+                            <ul class="text_1">
+                                <li>
+                                    <span>1月2日～3日まで</span>
+                                    <span>午前6時半より閉門まで</span>
+                                </li>
+                                <li>
+                                    <span>1月4日から7日まで</span>
+                                    <span>午前7時より閉門まで</span>
+                                </li>
+                                <li>
+                                    <span>通常日</span>
+                                    <span>午前9時より閉門まで</span>
+                                </li>
+                                <li>
+                                    <span>閉門 4月～10月 午後5時</span>
+                                    <span>11月～3月 午後4時</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="contentBody" id="no5">
+                            <div class="con_1">
+                                <div class="title">
+                                    <h3>お知らせ</h3>
+                                </div>
+                                <div class="text_1">
+                                    <div>2022.11.1</div>
+                                    <div>駐車場が広くご利用頂けるようになりました。</div>
+                                    <div>2022.10.1</div>
+                                    <div>「北国のしあわせ鈴」の販売について</div>
+                                </div>
+                            </div>
+                            <div class="con_2" id="no7">
+                                <div class="text_2">
+                                    <div class="title">
+                                        <h3>よくある質問</h3>
+                                    </div>
+                                    <p>
+                                        <span>こちらから</span><span>質問箱をご覧ください。</span>
+                                    </p>
+                                </div>
+                                <a href="contents.html#no4" class="img_1">
+                                    <img src="./img/q-button.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+
+                        <!-- <<< smart phone >>> -->
+                        <li class="contentBody" id="no8">
+                            <div class="title">
+                                <h3>アクセス</h3>
+                            </div>
+                            <p class="text_1">
+                                <span>地下鉄南北線</span>
+                                <span>中島公園駅</span>
+                                <span>徒歩3分</span>
+                            </p>
+                            <p>駐車場10台</p>
+                            <p>→ <a href="contents.html">駐車場のご案内</a></p>
+                            <div class="map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d364.45498347524125!2d141.35511500234136!3d43.049010746128324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a27ee23ea55%3A0xdedc877edeaf642!2z5YyX6Zai5p2x5a2m6Zmi!5e0!3m2!1sja!2sjp!4v1670447338951!5m2!1sja!2sjp"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerBody" id="no6">
+            <ul>
+                <li>
+                    <div class="footerTitle">北関神社</div>
+                    <div class="footerText_1">
+                        <p>〒064-0809</p>
+                        <p>
+                            <span>北海道札幌市</span>
+                            <span>中央区南9条</span>
+                            <span>3丁目2-10</span>
+                        </p>
+                        <p>
+                            <span>電話</span>
+                            <span>011-232-5508</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="footerText_2">
+                        <p>
+                            <span>地下鉄南北線</span>
+                            <span>中島公園駅</span>
+                            <span>徒歩3分</span>
+                        </p>
+                        <p>駐車場10台</p>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d364.45498347524125!2d141.35511500234136!3d43.049010746128324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a27ee23ea55%3A0xdedc877edeaf642!2z5YyX6Zai5p2x5a2m6Zmi!5e0!3m2!1sja!2sjp!4v1670447338951!5m2!1sja!2sjp"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="designlineLength"></div>
+        <div class="designlineVertical_under lineLen_1"></div>
+        <div class="designlineVertical_under lineLen_2"></div>
+
+    </footer>
+    <div class="copyRight">Copyright©北関神社 All right reserved</div>
+
+    <!-- <<< hamburger menu close >>> -->
+    <script>
+        const hmb_check = document.getElementById("hamb_btn-check");
+        function hamb_btn_off() {
+            hmb_check.checked = false;
+        }
+    </script>
+
+    <!-- <<< sidemenu top height set >>> -->
+    <script>
+        let windowSize = window.innerWidth;
+        const sideMenu = document.querySelector('.sideMenu');
+        let headerHeight = 0;
+        if (windowSize > 767.5) {
+            setTimeout(function () {
+                headerHeight = document.querySelector('header').clientHeight;
+                sideMenu.style.top = headerHeight + 2 + 'px';
+            }, 800);
+
+            window.addEventListener("resize", () => {
+                setTimeout(function () {
+                    headerHeight = document.querySelector('header').clientHeight;
+                    sideMenu.style.top = headerHeight + 2 + 'px';
+                }, 500);
+            }, false);
+        }
+    </script>
+
+    <!-- <<< window onlord check (sectionIdJump) >>> -->
+    <script>
+        window.onload = function () {
+            let url = location.hash;
+            if (url.indexOf('#') >= 0) {
+                let sCtop = document.querySelector(url).getBoundingClientRect().top;
+                if (url === "#no1") {
+                    sCtop = document.querySelector(".se2_mainContents .contentsBox .content_1").getBoundingClientRect().top;
+                }
+                let windowSize = window.innerWidth;
+                let newY = window.scrollY + sCtop;
+                let headerHeight = document.querySelector('header').clientHeight;
+                if (windowSize <= 767.5) {
+                    headerHeight = document.querySelector('#hamb label.hamb_btn').clientHeight;
+                    newY = newY - headerHeight - 20;
+                    hmb_check.checked = false;
+                } else {
+                    newY = newY - headerHeight;
+                }
+                window.scrollTo(0, newY);
+            }
+        }
+    </script>
+
+    <!-- <<< sectionIdJump >>> -->
+    <script>
+        function contentsMenuClick_no1() {
+            let sCtop = document.querySelector(".se2_mainContents .contentsBox .content_1").getBoundingClientRect().top;
+            let windowSize = window.innerWidth;
+            let newY = window.scrollY + sCtop;
+            let headerHeight = document.querySelector('header').clientHeight;
+            if (windowSize <= 767.5) {
+                headerHeight = document.querySelector('#hamb label.hamb_btn').clientHeight;
+                newY = newY - headerHeight - 20;
+                hmb_check.checked = false;
+            } else {
+                newY = newY - headerHeight;
+            }
+            window.scrollTo(0, newY);
+        }
+        function contentsMenuClick_no2() {
+            let sCtop = document.querySelector("#no2").getBoundingClientRect().top;
+            let windowSize = window.innerWidth;
+            let newY = window.scrollY + sCtop;
+            let headerHeight = document.querySelector('header').clientHeight;
+            if (windowSize <= 767.5) {
+                headerHeight = document.querySelector('#hamb label.hamb_btn').clientHeight;
+                newY = newY - headerHeight - 20;
+                hmb_check.checked = false;
+            } else {
+                newY = newY - headerHeight;
+            }
+            window.scrollTo(0, newY);
+        }
+        function contentsMenuClick_no3() {
+            let sCtop = document.querySelector("#no3").getBoundingClientRect().top;
+            let windowSize = window.innerWidth;
+            let newY = window.scrollY + sCtop;
+            let headerHeight = document.querySelector('header').clientHeight;
+            if (windowSize <= 767.5) {
+                headerHeight = document.querySelector('#hamb label.hamb_btn').clientHeight;
+                newY = newY - headerHeight - 20;
+                hmb_check.checked = false;
+            } else {
+                newY = newY - headerHeight;
+            }
+            window.scrollTo(0, newY);
+        }
+        function contentsMenuClick_no4() {
+            let sCtop = document.querySelector("#no4").getBoundingClientRect().top;
+            let windowSize = window.innerWidth;
+            let newY = window.scrollY + sCtop;
+            let headerHeight = document.querySelector('header').clientHeight;
+            if (windowSize <= 767.5) {
+                headerHeight = document.querySelector('#hamb label.hamb_btn').clientHeight;
+                newY = newY - headerHeight - 20;
+                hmb_check.checked = false;
+            } else {
+                newY = newY - headerHeight;
+            }
+            window.scrollTo(0, newY);
+        }
+        function contentsMenuClick_no5() {
+            let sCtop = document.querySelector("#no5").getBoundingClientRect().top;
+            let windowSize = window.innerWidth;
+            let newY = window.scrollY + sCtop;
+            let headerHeight = document.querySelector('header').clientHeight;
+            if (windowSize <= 767.5) {
+                headerHeight = document.querySelector('#hamb label.hamb_btn').clientHeight;
+                newY = newY - headerHeight - 20;
+                hmb_check.checked = false;
+            } else {
+                newY = newY - headerHeight;
+            }
+            window.scrollTo(0, newY);
+        }
+        function contentsMenuClick_no6() {
+            let sCtop = document.querySelector("#no6").getBoundingClientRect().top;
+            let windowSize = window.innerWidth;
+            let newY = window.scrollY + sCtop;
+            let headerHeight = document.querySelector('header').clientHeight;
+            if (windowSize <= 767.5) {
+                headerHeight = document.querySelector('#hamb label.hamb_btn').clientHeight;
+                newY = newY - headerHeight - 20;
+                hmb_check.checked = false;
+            } else {
+                newY = newY - headerHeight;
+            }
+            window.scrollTo(0, newY);
+        }
+        function contentsMenuClick_no7() {
+            let sCtop = document.querySelector("#no7").getBoundingClientRect().top;
+            let windowSize = window.innerWidth;
+            let newY = window.scrollY + sCtop;
+            let headerHeight = document.querySelector('header').clientHeight;
+            if (windowSize <= 767.5) {
+                headerHeight = document.querySelector('#hamb label.hamb_btn').clientHeight;
+                newY = newY - headerHeight - 20;
+                hmb_check.checked = false;
+            } else {
+                newY = newY - headerHeight;
+            }
+            window.scrollTo(0, newY);
+        }
+        function contentsMenuClick_no8() {
+            let sCtop = document.querySelector("#no8").getBoundingClientRect().top;
+            let windowSize = window.innerWidth;
+            let newY = window.scrollY + sCtop;
+            let headerHeight = document.querySelector('header').clientHeight;
+            if (windowSize <= 767.5) {
+                headerHeight = document.querySelector('#hamb label.hamb_btn').clientHeight;
+                newY = newY - headerHeight - 20;
+                hmb_check.checked = false;
+            } else {
+                newY = newY - headerHeight;
+            }
+            window.scrollTo(0, newY);
+        }
+    </script>
+</body>
+
+</html>
