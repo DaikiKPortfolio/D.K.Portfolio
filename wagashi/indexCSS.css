@@ -894,6 +894,13 @@ footer small {
 		margin-bottom: 120px;
 	}
 
+	#se4 .content_1-spring .imgBox_1,
+	#se4 .content_1-summer .imgBox_1,
+	#se4 .content_1-autumn .imgBox_1,
+	#se4 .content_1-winter .imgBox_1 {
+		max-height: 470px;
+	}
+
 	#se4 .content_1-spring .imgBox_2 img,
 	#se4 .content_1-summer .imgBox_2 img,
 	#se4 .content_1-autumn .imgBox_2 img,
@@ -921,6 +928,7 @@ footer small {
 		display: block;
 		background-size: cover;
 		background-repeat: no-repeat;
+		max-height: 470px;
 	}
 
 	#se4 .content_1-summer .imgBox_2 img:last-child,
