@@ -304,6 +304,10 @@ section .seBody .content {
 	box-shadow: 2px 1px 4px #ff0000;
 }
 
+#se2 .seBody .content:last-child {
+	margin-top: max(12vh, 50px);
+}
+
 section .seBody .content h3 {
 	position: absolute;
 	top: -27px;
