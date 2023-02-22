@@ -612,9 +612,15 @@
 			event.preventDefault();
 		}
 
-		const position = Math.floor(window.innerHeight * 1);
+		let position = Math.floor(window.innerHeight * 1);
+		let pageYOffset = 0;
+		window.addEventListener('DOMContentLoaded', function(){
+			if(pageYOffset == 0) {
+				document.getElementById("hmsoSW").classList.add("hmbFadeIn-top");
+			}
+		});
 		window.addEventListener('scroll', () => {
-			const pageYOffset = window.pageYOffset;
+			pageYOffset = window.pageYOffset;
 			if (pageYOffset > position) {
 				document.getElementById("hmsoSW").classList.remove("hmbFadeIn-top");
 				document.getElementById("hmsoSW").classList.add("hmbFadeIn-main");
