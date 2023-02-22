@@ -628,9 +628,15 @@
 			if (document.getElementById('hamb_btn-check').checked) {
 				document.addEventListener('touchmove', disableScroll, { passive: false });
 				document.addEventListener('mousewheel', disableScroll, { passive: false });
+				document.getElementById("hmsoSW").classList.add("hmbFadeIn");
 			} else {
 				document.removeEventListener('touchmove', disableScroll, { passive: false });
 				document.removeEventListener('mousewheel', disableScroll, { passive: false });
+				document.getElementById("hmsoSW").classList.add("hmbFadeOut");
+				window.setTimeout(function () {
+					document.getElementById("hmsoSW").classList.remove("hmbFadeIn");
+					document.getElementById("hmsoSW").classList.remove("hmbFadeOut");
+				}, 300);
 			}
 		}
 	</script>
