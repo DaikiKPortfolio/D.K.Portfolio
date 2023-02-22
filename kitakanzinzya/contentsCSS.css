@@ -251,7 +251,7 @@ header {
 .sideMenu .list li {
 	width: 100%;
 	height: 6.5vh;
-	margin: max(2vw, 10px) 0;
+	margin: 15px 0;
 }
 
 .sideMenu .list li:first-child {
